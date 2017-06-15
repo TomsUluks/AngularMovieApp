@@ -1,0 +1,5 @@
+<section class="menu">
+  <div  *ngFor = 'let movie of movies' [class.selected]="movie === selectedMovie"(click)="onSelect(movie)">
+    <div class="col-lg-2 row"><img class="poster"  src = "https://image.tmdb.org/t/p/w500/{{movie.poster_path}}"></div>
+  </div>
+</section>
